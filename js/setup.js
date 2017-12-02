@@ -42,11 +42,11 @@ for (var j = 0; j <= 3; j++) {
     wizardElement.querySelector('.wizard-eyes').style.fill = wizard.eyesColor;
     return wizardElement;
   };
-};
-  var fragment = document.createDocumentFragment();
-  for (var i = 0; i < wizards.length; i++) {
+}
+var fragment = document.createDocumentFragment();
+for (i = 0; i < wizards.length; i++) {
   fragment.appendChild(renderWizard(wizards[i]));
 }
-  similarListElement.appendChild(fragment);
+similarListElement.appendChild(fragment);
 
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
